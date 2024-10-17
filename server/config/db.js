@@ -1,3 +1,5 @@
+
+
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
@@ -8,7 +10,7 @@ const connectDB = async () => {
         });
         console.log('MongoDB Connected...');
     } catch (error) {
-        console.error(`Error: ${error.message}`);
+        console.error(`MongoDB Connection Error: ${error.message}`);
         process.exit(1);
     }
 };
